@@ -29,7 +29,7 @@ RUN npm install --only=production
 COPY --from=build /app/server.js ./
 
 # Copy environment file
-COPY env.production .env
+COPY .env .env
 
 # Expose port
 EXPOSE 3001
